@@ -6,9 +6,15 @@
 
 ## 复现目标
 
-1. 训练 SAE 在 GPT-2 Small 的 residual stream 上
+**目标模型** (4个):
+1. **Llama 3** (8B) — LlamaScope SAE 可用
+2. **Qwen 3** (8B) — QwenScope SAE 可用
+3. **DeepSeek V4** — 自有 SAE 权重
+4. **Gemma 4** — Gemma Scope 2 SAE 可用
+
+1. 在 4 个模型的 residual stream 上训练/加载 SAE
 2. 复现关键指标: L0 sparsity、CE loss recovery、dead features ratio
-3. 特征可解释性分析（auto-interpretability）
+3. 跨模型特征可解释性对比分析（auto-interpretability）
 4. 特征 steering 实验
 
 ## 核心架构
